@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #b0b0b0
+        }
+
+        img{width:550px;
+        height:695px;
+        display:inline-block;
+        vertical-align:top;
+        margin:20px;
+           }
+
+        .inlineblock {
+            display: inline-block;
+            vertical-align: top;
+            background-color: white;
+            width:550px;
+        height:695px;
+        box-sizing:border-box;
+        padding:50px;
+        margin:20px;
+        line-height: 35px;
+        }
+
+        .read {
+            border: 1px solid black;
+            display:inline-block;
+            width:100px;
+            height:50px;
+            line-height:50px;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="woman"
+            src="https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/80f9d9d02af9527ab358c361/pexels-photo-3335367.jpeg">
+    
+    <div class="inlineblock">Podcasting operational change management inside of workflows to establish a framework.
+        Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while
+        performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+        Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate
+        extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis
+        cutting-edge deliverables. <br><a class="read" href="https://nicepage.com/css-templates/preview/editor-in-chief-interview-196735?device=desktop">read more</a>
+    </div>
+</body>
+
+<!-- 주춤했던 부분 
+1. 이미지 div태그로 감싸두고 크기 변경해서 이미지 크기 변경이 안됨
+    그래서 이미지에 class를 부여하고 크기변경 성공
+2. 오른쪽 텍스트 줄간격 line-height 적용  -->
+</html>
