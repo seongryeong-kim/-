@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //결과 출력시
+        console.log("hello world")
+
+        let a = 11;
+        console.log("a: ",a);
+        a = "문자";
+        console.log(a);
+        //let 은 재선언이 불가하지만 값 재할당은 가능하다
+        //var는 이미 선언한 변수를 또 선언할 수 있다
+        //const 재할당, 재선언 불가
+
+        //확인창-alert(), confirm(), prompt()
+        alert("Hello");
+        let c1=confirm("하시겠습니까?"); // 확인true, 취소false 선택버튼 
+        console.log("컨펌결과 :",c1); //확인 누를 경우 컨펌결과 : true
+
+        let c2=prompt("당신의 나이는?");
+        console.log("프롬프트 결과:",c2); //프롬프트 결과: 50 내가 작성한 숫자가 뜬다
+
+        /*
+        역슬래시
+        \n 엔터
+        \t 탭
+        \' 따옴표
+        */
+
+        console.error("빨간글씨 에러표시");
+
+        //type of 변수의 타입을 알려줌
+        console.log(typeof 1);          //number
+        console.log(typeof "문자");     //string
+        console.log(typeof true);       //boolean
+        console.log(typeof c);          //undefined -- c라는 변수가 없기 때문에
+
+        console.log(1-"a"); //출력결과 NaN (Not a Number) 1-문자는 계산할 수 없
+
+        let c4 = "123.4";
+        console.log(c4+5); //123.45 :123.4문자에 숫자 5가 추가됨
+
+        //문자를 숫자로
+        let c5 = Number(c4)+5;
+        console.log(c5);    //128.4
+
+        // 문자를 숫자로 변환하는데 정수만 남긴다
+        console.log(parseInt(c4)); //출력결과:123
+
+        let y = now.getFullYear();
+        console.log("년: ",y); //2024 
+
+        /*
+        now.getMonth()
+        now.getDate()
+        now.getDay()
+        now.getHours()
+        now.getMinutes()
+        now.getSeconds()
+        */
+
+        console.log('1 =="1"', 1 == "1");  //java Script에서는 true
+        console.log('1 =="1"', 1 === "1"); //false :타입까지 같은지 비교하려면 === 세 개 
+
+        let a5 = 12;
+        a5 = a5 +1;
+        a5 = a5 ++ +1;
+        console.log("a5++",a5) //13
+        a5= ++a5 +1; 
+
+        a5 += 1;
+        a5++;
+        ++a5;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
